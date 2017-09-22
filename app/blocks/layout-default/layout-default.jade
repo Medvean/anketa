@@ -1,0 +1,17 @@
+include /../node_modules/bemto.jade/bemto
+include /../node_modules/jade-injected/jade-injected
+include ../page/page
+include ../wrapper/wrapper
+include ../container/container
+include ../header/header
+include ../scripts/scripts
+
+doctype html
+html(lang='ru')
+	include ../head/head
+	+page
+		+wrapper
+			+container
+				+header
+				block content
+		+scripts(['https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/10.1.0/nouislider.min.js', 'app.min.js'])

@@ -1,0 +1,51 @@
+.level-js
+	position relative
+	margin-top 10px
+	height 60px
+	background-image url(../images/scale.png)
+	background-repeat no-repeat
+	background-position left -4px top -7px
+
+	&__item
+		position absolute
+		max-width 175px
+		font-size 13px
+		font-weight 700
+		line-height 18px
+		color $heading-color
+
+		&:before
+			position absolute
+			top 2px
+			left 0
+			width 20px
+			height 11px
+			content ''
+			background-image url(../images/scale_level-marker.png)
+			background-repeat no-repeat
+
+		&_level-0
+			top 51px
+			left 1px
+
+		&_level-1
+			top 20px
+			left 142px
+			padding-top 29px
+			padding-left 4px
+
+		&_level-2
+			top 20px
+			left 367px
+			padding-top 29px
+			padding-left 6px
+
+		&_level-3
+			top 56px
+			right 1px
+
+		&_extreme-value
+			max-width 140px
+
+			&:before
+				content none

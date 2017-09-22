@@ -1,0 +1,8 @@
+mixin input-radio(item)
+	+b.input-radio
+		- const id = attributes.id
+		- const name = attributes.name
+		- const checked = attributes.checked
+
+		+e('input').input(type= 'radio' id= id name= name value= id checked= (checked ? 'checked' : undefined))
+		+e('label').label(for= id) #{item}

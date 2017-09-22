@@ -1,0 +1,83 @@
+[{
+	"id": "bem",
+	"skill": "БЭМ/OOCSS",
+	"checked": true
+}, {
+	"id": "pug",
+	"skill": "Pug (Jade)",
+	"checked": true
+}, {
+	"id": "css-preprocessor",
+	"skill": "Stylus/LESS/SASS",
+	"checked": true
+}, {
+	"id": "svg",
+	"skill": "Работаю с SVG",
+	"checked": false
+}, {
+	"id": "semantics",
+	"skill": "Верстаю семантично",
+	"checked": false
+}, {
+	"id": "a11y",
+	"skill": "Accessibility (A11Y)",
+	"checked": false
+}, {
+	"id": "es",
+	"skill": "ES2015/ES2016",
+	"checked": false
+}, {
+	"id": "toolkit",
+	"skill": "Gulp/GRUNT",
+	"checked": false
+}, {
+	"id": "webpack",
+	"skill": "Webpack",
+	"checked": false
+}, {
+	"id": "webgl",
+	"skill": "Дружу с WebGL",
+	"checked": false
+}, {
+	"id": "jquery",
+	"skill": "jQuery",
+	"checked": false
+}, {
+	"id": "angular",
+	"skill": "Знаю/изучаю Angular",
+	"checked": false
+}, {
+	"id": "react",
+	"skill": "Знаю/изучаю React",
+	"checked": false
+}, {
+	"id": "nodejs",
+	"skill": "Знаю/изучаю Node.js",
+	"checked": false
+}, {
+	"id": "git",
+	"skill": "Использую Git",
+	"checked": false
+}, {
+	"id": "goodeye",
+	"skill": "С глазомером",
+	"checked": false,
+	"spans": [{
+		"span": "всё"
+	}, {
+		"span": "ок"
+	}]
+}, {
+	"id": "csssr",
+	"skill": "Читаю",
+	"checked": false,
+	"link": "blog.csssr.ru"
+}, {
+	"id": "lazy",
+	"skill": "Я ленивый(-ая)",
+	"checked": false
+}, {
+	"id": "english",
+	"skill": "У меня хороший английский",
+	"checked": false
+}]

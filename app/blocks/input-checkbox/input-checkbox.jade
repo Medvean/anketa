@@ -1,0 +1,16 @@
+mixin input-checkbox(item)
+	- const idPrefix = attributes.idPrefix
+	- const id = idPrefix ? `${idPrefix}-${item.id}` : item.id
+
+	+b.input-checkbox
+
+		+e.INPUT.input(id= id type= 'checkbox' checked= item.checked)
+		+e.input-bgrd
+
+		+e.LABEL.label(for= id) #{item.skill}
+			if (item.spans)
+				- const spans = item.spans
+				each item in spans
+					+e('span').__goodeye #{item.span}
+			if (item.link)
+				+e('a').link(href='http://#{item.link}') #{item.link}

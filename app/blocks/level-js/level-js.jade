@@ -1,0 +1,12 @@
+mixin level-js()
+	+b.level-js&attributes(attributes)
+
+			- const levels = ['Не владею', 'Использую готовые решения',	'Использую готовые решения и умею их переделывать',	'Пишу сложный JS с нуля']
+
+			- const minValue = 0
+			- const maxValue = levels.length - 1
+
+			+e.scale#slider
+
+			each level, i in levels
+				+e.item(class= (i === minValue || i === maxValue) ? `_level-${i} _extreme-value`: `_level-${i}`) #{level}

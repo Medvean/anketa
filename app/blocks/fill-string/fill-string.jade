@@ -1,0 +1,15 @@
+include ../input-text/input-text
+
+mixin fill-string(items)
+
+		each item in items
+
+			- const name = item[0]
+			- const id = name
+			- const labelContent = item[1]
+			- const inputContent = item[2]
+
+				+b.fill-string&attributes(attributes)
+					+e.LABEL(class= `label_${name}` for= id)
+						| #{labelContent}
+					+input-text(id, name, inputContent)(class= `fill-string__input_${name}`)

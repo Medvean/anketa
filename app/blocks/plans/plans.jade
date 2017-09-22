@@ -1,0 +1,11 @@
+include ../input-radio/input-radio
+
+mixin plans()
+	+b.plans&attributes(attributes)
+
+			- const plans = ['Верстать', 'Прокачиваться в JS', 'Менеджерство', 'Другое']
+			- const checked = 0
+
+			each plan, i in plans
+				+e.item
+					+input-radio(plan)(id = `plan-${i + 1}` name= 'plan' checked= (i === checked ? true : false))

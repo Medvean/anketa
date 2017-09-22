@@ -1,0 +1,12 @@
+mixin input-text(...args)
+	- const noInput = args.indexOf('no-input') !== -1
+	- const id = args[0]
+	- const name = args[1]
+	- const content = args[2]
+
+	+b.input-text&attributes(attributes)
+
+		if noInput
+			block
+		else
+			+e.INPUT.input(id= id type= 'text' name= name value= content)

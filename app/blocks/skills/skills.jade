@@ -1,0 +1,17 @@
+include ../input-checkbox/input-checkbox
+
+mixin skills(skills)
+
+	+b.UL.skills&attributes(attributes)
+
+		-	const length = skills.length
+		-	const numCol = 3 //- Number of columns
+		-	const number = length > 6 ? Math.floor(length / numCol) + 1 : Math.floor(length / numCol) //- Number of items in a column
+		-	const initial = number
+		-	const final = number * 2 - 1
+
+		each item, i in skills
+
+			+e.item(class= (i >= initial && i <= final) ? '_middle' : (i > final) ? '_right' : null)
+
+				+input-checkbox(item)(idPrefix= "skill")
